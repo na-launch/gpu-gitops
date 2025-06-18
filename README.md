@@ -13,26 +13,6 @@ This repository uses GitOps to deploy NVIDIA GPU support into your cluster. It a
 2. `oc` (or `kubectl`) logged into the cluster as a cluster-admin.  
 3. `kustomize` CLI (optional if you use `oc apply -k`).
 
-## 💡 How it works
-
-1. Deploys NFD → adds GPU labels to nodes (`feature.node.kubernetes.io/pci-10de.present`).  
-2. GPU Operator watches GPU-labeled nodes → installs NVIDIA drivers, NVIDIA Container Toolkit, device plugin, DCGM, etc.
-
-You can validate GPU detection with:
-
-```bash
-oc describe node | grep pci-10de
-```
-
-And test GPU operator with:
-
-```bash
-oc -n nvidia-gpu-operator get pods
-oc exec -n nvidia-gpu-operator \
-  $(oc get pod -l app=nvidia-driver -o jsonpath='{.items[0].metadata.name}') \
-  -- nvidia-smi
-```
-
 ---
 
 ## 🛠️ Deploying via GitOps
