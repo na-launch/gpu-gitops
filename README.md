@@ -24,7 +24,7 @@ You can bootstrap these components declaratively without cloning this repo with:
 oc login <your-cluster-url> --token=<token> --server=<api-url>
 
 # 2. Bootstrap GPU GitOps
-oc apply -k https://raw.githubusercontent.com/na-launch/gpu-gitops/refs/heads/main/gitops/manifests/cluster/bootstrap/base/bigbang-app.yaml
+oc apply -f https://raw.githubusercontent.com/na-launch/gpu-gitops/main/gitops/manifests/cluster/bootstrap/base/bigbang-app.yaml
 
 # 3. Monitor progress
 oc get pods -n nvidia-gpu-operator -w
