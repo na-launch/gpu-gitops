@@ -57,8 +57,15 @@ oc -n nvidia-gpu-operator get pods -l openshift.driver-toolkit=true -o name | wh
   echo
 done
 ```
-
 ---
+
+## 📊 Viewing GPU Metrics
+
+In the OpenShift Container Platform web console:
+
+- Go to **Observe > Dashboards** → select **NVIDIA DCGM Exporter Dashboard** from the list.
+
+The **NVIDIA DCGM Exporter Dashboard** displays GPU-related graphs such as utilization, temperature, memory usage, and more.
 
 ## 🛡️ Next Steps
 
