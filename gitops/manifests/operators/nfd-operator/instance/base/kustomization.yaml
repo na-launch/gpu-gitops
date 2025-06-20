@@ -8,9 +8,7 @@ resources:
 
   - cr-nfd-worker-nodefeature-writer.yaml
   - cbr-nfd-worker-nodefeature.yaml
-
   - cr-nfd-master-nodefeaturerules-reader.yaml
   - cbr-nfd-master-nodefeaturerules.yaml
-  
   - cr-nfd-master-nodefeature-reader.yaml
   - cbr-nfd-master-nodefeature.yaml
