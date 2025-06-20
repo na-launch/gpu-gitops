@@ -5,9 +5,12 @@ namespace: openshift-nfd
 
 resources:
   - node-feature-discovery.yaml
+
   - cr-nfd-worker-nodefeature-writer.yaml
   - cbr-nfd-worker-nodefeature.yaml
+
   - cr-nfd-master-nodefeaturerules-reader.yaml
-  - cbr-ndf-master-nodefeaturerules.yaml
+  - cbr-nfd-master-nodefeaturerules.yaml
+  
   - cr-nfd-master-nodefeature-reader.yaml
-  - cbr-ndf-master-nodefeature.yaml
+  - cbr-nfd-master-nodefeature.yaml
