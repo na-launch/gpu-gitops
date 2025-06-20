@@ -1,0 +1,8 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  name: nfd-master-nodefeaturerules-reader
+rules:
+  - apiGroups: ["nfd.k8s-sigs.io"]
+    resources: ["nodefeaturerules"]
+    verbs: ["get", "list", "watch"]
