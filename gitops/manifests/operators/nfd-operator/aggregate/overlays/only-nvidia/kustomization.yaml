@@ -8,5 +8,6 @@ namespace: openshift-nfd
 
 resources:
   - ../../../operator/overlays/stable
-  - ../../../instance/overlays/only-nvidia
+  # - ../../../instance/overlays/only-nvidia
+  - ../../../instance/base
   
