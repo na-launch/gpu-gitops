@@ -113,5 +113,6 @@ spec:
       #            device: ["1014", "1017"]
       #          loadedKMod : ["vendor_kmod1", "vendor_kmod2"]
   operand:
+    image: registry.redhat.io/openshift4/ose-node-feature-discovery-rhel9:latest
     imagePullPolicy: IfNotPresent
     servicePort: 12000
